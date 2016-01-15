@@ -5,7 +5,7 @@ serviceurl = 'http://maps.googleapis.com/maps/api/geocode/json?'
 
 while True:
     address = raw_input('Enter location: ')
-    if len(address) < 1 : break
+    if len(address) < 1 : address = "South Federal University"
 
     # retrive the jspn form url
     url = serviceurl + urllib.urlencode({'sensor':'false', 'address': address})
